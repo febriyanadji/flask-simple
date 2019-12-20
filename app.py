@@ -1,11 +1,7 @@
-from flask import Flask, request, jsonify
+from flask import Flask
 app = Flask(__name__)
-
-# A welcome message to test our server
 @app.route('/')
 def index():
-    return "<h1>Welcome to Febriyan server !!</h1>"
-
+    return 'hai <b> febri</b>'
 if __name__ == '__main__':
-    # Threaded option to enable multiple instances for multiple user access support
-    app.run(threaded=True, port=5000)
+    app.run();
