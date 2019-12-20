@@ -10,7 +10,8 @@ install:
 
 before_script:
   - export FLASK_APP=app.py
-script: key
+script:
+  - ls -al
 # script: python -m pytest -v
 
 # script: flask test
