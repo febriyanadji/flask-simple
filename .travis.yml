@@ -12,6 +12,12 @@ before_script:
   - export FLASK_APP=app.py
 script:
   - ls -al
+after_success:
+  - echo "Sukses .."
+after_failure:
+  - echo "Gagal .."
+after_script:
+  - echo "Membersihkan .."
 # script: python -m pytest -v
 
 # script: flask test
