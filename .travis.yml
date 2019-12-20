@@ -11,4 +11,4 @@ install:
 before_script:
   - export FLAS_APP=app.py
 
-script: flask run
+script: flask test
